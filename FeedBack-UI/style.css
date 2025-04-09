@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&family=Space+Grotesk:wght@300..700&family=Varela&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.panel-container{
+    background-color: white;
+    box-shadow: 0 6px 12px -2px rgba(50,50,95,0.25);
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    max-width: 500px;
+}
+
+.panel-container strong{
+    line-height: 2rem;
+}
+
+.ratings-container{
+    display: flex;
+    margin: 1rem 0;
+}
+
+.rating{
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.rating p{
+    margin: 0;
+    font-size: 6rem;
+    transition: transform 0.5s ease;
+}
+
+.rating small{
+    font-weight:bold;
+    color: #555;
+}
+
+.rating:hover small,
+.rating.active small{
+    color: #111;
+}
+
+.rating:hover p,
+.rating.active p{
+    transform: scale(1.2);
+}
+
+.btn{
+    background-color: tomato;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 100%;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.2s ;
+}
+
+.btn:active{
+    transform: scale(0.97);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.fa-heart{
+    font-size: 5rem;
+    color: deeppink;
+    margin-bottom:2rem;
+}
